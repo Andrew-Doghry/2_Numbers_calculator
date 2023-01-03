@@ -1,0 +1,116 @@
+/* start of global values */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: #4c392f;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: 0px;
+    margin-bottom: 0%;
+}
+/* small */
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width:992px){
+    .container {
+        width: 970px;
+    }
+}
+/* large */
+@media (min-width:1200px){
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end of global values */
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.container ,
+.col{
+    display: flex;
+    flex-flow: column;
+}
+.container .header {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction:column;
+    font-size: 35px;
+    padding: 15px;
+}
+.container .header .remenent,
+.container .header .current {
+    width: 100%;
+    height: 50px;
+   
+}
+.container .btns{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,33%);
+    background-color: #c6c6dd39;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+span{
+    padding: 10px;
+    margin: 5px;
+    background-color: #4ecabb7e;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+.container .btns span[operator]{
+    background-color: #ca794e7b;
+
+}
+.ac{
+    color: black;
+    background-color: white;
+    grid-column: 1  / 3;
+}
+.back{
+    color: black;
+    background-color: white;
+}
+
